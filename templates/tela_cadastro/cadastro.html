@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <link href="../Projeto Integrador/css/signin.css" rel="stylesheet" >
+
+    <div class="container">
+        <div class="row">
+            <nav class="navbar fixed-top navbar-light"  style="background-color: #aad9fa; ">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Diarista</a>
+                  <ul class="nav justify-content-end  ">
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-primary">Login</button>
+                    </li>
+                </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="row">
+          <div class="col">
+            <img src="../Projeto Integrador/img/img_login.jpg" class="img-fluid" height: auto;alt="...">
+          </div>
+          <div class="col">
+          <!--Formulario do cadastro-->
+          <form>
+            <div class="row">
+                <div class="mb-3 p-3">
+                    <p class="text-center fs-3">Informe seus dados</p>
+                </div>
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <label for="formGroupExampleInput" class="form-label">Nome Completo</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="ex: Maria Raimunda Santos Fernandes">
+              </div>
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <label for="exampleInputPassword1" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <label for="exampleInputEmail1" class="form-label">Confirme seu e-mail</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="d-grid gap-2 col-6 mx-auto"><label for="day" class="form-label" aria-describedby="emailHelp">Data de Nascimento</label></div>
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <input type="date" class="form-control" id="day" name="day" aria-describedby="emailHelp">
+              </div>
+              <div><i class="fa-brands fa-facebook"></i></div>
+              
+              <div class="d-grid gap-2 col-6 mx-auto p-3">
+                <button type="submit" class="btn btn-primary">Cadastar</button>
+              </div>
+              
+          </form>
+          </div>
+        </div>
+      </div>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+  <footer>
+   
+  </footer>
+</html>

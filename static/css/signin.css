@@ -9,6 +9,13 @@ body {
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
+<<<<<<< HEAD
+  background-color: #aad9fa;
+}
+
+
+
+=======
   background-color: #c0ddf8;
 }
 
@@ -38,3 +45,4 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+>>>>>>> 995b8f3c6848a006976bab1eb1a0fe8353a62b98
