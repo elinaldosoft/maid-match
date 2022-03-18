@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block container %}
+  <ul class="nav justify-content-end  ">
+      <li class="nav-item">
+          <button type="button" class="btn btn-primary">Cadastre-se</button>
+      </li>
+  </ul>
+    <div class="row ">
+      <div class="col">
+        <img src="{% static 'img/img_login.jpg'%}"class="img-thumbnail"  alt="..">
+      </div>
+      
+    <div class="col">
+      <form>
+          <p class="text-center fs-3">Faça seu login</p>
+          <!--campo para preencher email-->
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <label for="exampleInputEmail1" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <!--campo para preencher senha-->
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <label for="exampleInputPassword1" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="d-grid gap-2 col-6 mx-auto">
+              <div id="emailHelp" class="form-text">Esqueceu sua senha?</div>
+          </div>
+          <!--botão-->
+          <div class="d-grid gap-2 col-6 mx-auto">
+          <button type="submit" class="btn btn-primary">Entrar</button>
+          </div>
+        </form>
+    </div>
+  </div>
+{% endblock %}

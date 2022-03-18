@@ -1,0 +1,7 @@
+[MASTER]
+max-line-length=160
+disable=
+    C0114, # missing-module-docstring
+    C0115, # missing-module-docstring
+    C0116, # missing-module-docstring
+    too-few-public-methods
