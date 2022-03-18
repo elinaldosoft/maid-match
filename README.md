@@ -19,5 +19,8 @@ Encontre sua doméstica
 ### Como fazer testes no Django
 - https://docs.djangoproject.com/en/4.0/topics/testing/tools/
 
-### CircleCI Badges
+### CircleCI
+- Main
 [![CircleCI](https://circleci.com/gh/elinaldosoft/maid-match/tree/main.svg?style=svg)](https://circleci.com/gh/elinaldosoft/maid-match/tree/main)
+- Develop
+[![CircleCI](https://circleci.com/gh/elinaldosoft/maid-match/tree/develop.svg?style=svg)](https://circleci.com/gh/elinaldosoft/maid-match/tree/develop)
