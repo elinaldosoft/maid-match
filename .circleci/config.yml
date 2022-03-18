@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/python:3.10.2
+      - image: cimg/python:3.10.2
     steps:
       - checkout
       - restore_cache:
@@ -21,6 +21,3 @@ jobs:
           command: |
             . venv/bin/activate
             pytest
-      - store_artifacts:
-          path: test-reports/
-          destination: python_app
