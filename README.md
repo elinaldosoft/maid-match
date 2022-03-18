@@ -12,3 +12,6 @@ Encontre sua doméstica
 
 ### Ambiente de trabalho
 - https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/
+
+### Instalando Dependências
+- pip3 install -r requirements/dev.txt
