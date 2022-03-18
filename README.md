@@ -15,3 +15,6 @@ Encontre sua doméstica
 
 ### Instalando Dependências
 - pip3 install -r requirements/dev.txt
+
+### Como fazer testes no Django
+- https://docs.djangoproject.com/en/4.0/topics/testing/tools/
