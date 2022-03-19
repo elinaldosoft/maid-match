@@ -15,9 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app.accounts.views import AccountsView
+from app.accounts.views import AccountsView, AccountsRegisterView, AccountsComplementRegisterView
 
 urlpatterns = [
-    path('', AccountsView.as_view(), name='accounts'),
+    path('entrar', AccountsView.as_view(), name='accounts'),
+    path('cadastro', AccountsRegisterView.as_view(), name='register'),
+    path('complemento', AccountsComplementRegisterView.as_view(), name='complement_register'),
     path('admin/', admin.site.urls),
+
 ]
