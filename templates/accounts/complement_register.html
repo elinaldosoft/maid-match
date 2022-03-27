@@ -2,5 +2,60 @@
 {% load static %}
 {% block title %} Registro Completo {% endblock %}
 {% block container %}
-
+<div class="row">
+    <nav class="navbar fixed-top navbar-light"  style="background-color: #aad9fa; ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Registro Completo/a>
+          <ul class="nav justify-content-end  ">
+            <li class="nav-item">
+                <button type="button" class="btn btn-primary">Login</button>
+            </li>
+        </ul>
+        </div>
+    </nav>
+</div>
+<form class="row g-3">
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="email" class="form-control" id="inputEmail4">
+    </div>
+    <div class="col-md-6">
+      <label for="inputPassword4" class="form-label">Senha</label>
+      <input type="password" class="form-control" id="inputPassword4">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">Endereco</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="Rua Norte, 10">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress2" class="form-label">Complemento</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    </div>
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">Cidade</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="col-md-4">
+      <label for="inputState" class="form-label">Estado</label>
+      <select id="inputState" class="form-select">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <label for="inputZip" class="form-label">CEP</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Check me out
+        </label>
+      </div>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Cadastrar/button>
+    </div>
+  </form>
 {% endblock %}
