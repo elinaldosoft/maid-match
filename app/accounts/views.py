@@ -1,7 +1,7 @@
 from django.views import View
 from django.http.request import HttpRequest
 from django.http.response import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 
 
 class MixBaseView(View):
@@ -17,6 +17,9 @@ class AccountsView(MixBaseView):
 
 class AccountsRegisterView(MixBaseView):
     template_name = 'accounts/register.html'
+
+    def post(self, request: HttpRequest) -> HttpResponse:
+        return redirect('complement_register')
 
 
 class AccountsComplementRegisterView(MixBaseView):

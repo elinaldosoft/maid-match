@@ -21,7 +21,8 @@
           </div>
           <div class="col">
           <!--Formulario do cadastro-->
-          <form>
+          <form action="{% url 'register' %}" method="POST">
+            {% csrf_token %}
             <div class="row">
                 <div class="mb-3 p-3">
                     <p class="text-center fs-3">Informe seus dados</p>
