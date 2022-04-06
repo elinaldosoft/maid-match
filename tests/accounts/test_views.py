@@ -24,3 +24,15 @@ def test_register(client):
     assert 'Cadastro' in html
     assert response.headers
     assert response.headers.get('Content-Type') == 'text/html; charset=utf-8'
+
+@pytest.mark.django_db
+def test_complement_register(client):
+    url = reverse('complement_register')
+    response = client.get(url)
+    assert response.status_code == 200
+    assert response.charset == 'utf-8'
+
+    html = response.content.decode()
+    assert 'Complemento Cadastro' in html
+    assert response.headers
+    assert response.headers.get('Content-Type') == 'text/html; charset=utf-8'
