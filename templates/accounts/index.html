@@ -3,14 +3,13 @@
 {% block container %}
   <ul class="nav justify-content-end  ">
       <li class="nav-item">
-          <button type="button" class="btn btn-primary">Cadastre-se</button>
+          <a href="{% url 'register' %}" class="btn btn-primary">Cadastre-se</a>
       </li>
   </ul>
     <div class="row ">
       <div class="col">
         <img src="{% static 'img/img_login.jpg'%}"class="img-thumbnail"  alt="..">
       </div>
-      
     <div class="col">
       <form>
           <p class="text-center fs-3">Faça seu login</p>
@@ -24,14 +23,36 @@
             <label for="exampleInputPassword1" class="form-label">Senha</label>
             <input type="password" class="form-control" id="exampleInputPassword1">
           </div>
+
           <div class="d-grid gap-2 col-6 mx-auto">
-              <div id="emailHelp" class="form-text">Esqueceu sua senha?</div>
+              <div id="emailHelp" class="form-text" style="margin-bottom: 5px;">
+                <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal">Esqueceu sua senha?</a>
+              </div>
           </div>
+
           <!--botão-->
           <div class="d-grid gap-2 col-6 mx-auto">
           <button type="submit" class="btn btn-primary">Entrar</button>
           </div>
         </form>
     </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Recuperar Senha</h5> 
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
   </div>
 {% endblock %}
