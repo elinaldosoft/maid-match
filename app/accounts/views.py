@@ -11,6 +11,10 @@ class MixBaseView(View):
         return render(request, self.template_name)
 
 
+class HomeView(MixBaseView):
+    template_name = 'index.html'
+
+
 class AccountsView(MixBaseView):
     template_name = 'accounts/index.html'
 
