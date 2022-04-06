@@ -21,6 +21,7 @@ class AccountsView(MixBaseView):
     def post(self, request: HttpRequest) -> HttpResponse:
         return redirect('home_page')
 
+
 class AccountsRegisterView(MixBaseView):
     template_name = 'accounts/register.html'
 
