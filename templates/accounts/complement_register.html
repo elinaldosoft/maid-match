@@ -4,7 +4,7 @@
 {% block container %}
 <nav class="navbar fixed-top navbar-light"  style="background-color: #0779ca; ">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Registro Completo </a>
+    <a class="navbar-brand" href="#">Registro Completo</a>
     <ul class="nav justify-content-end  ">
       <li class="nav-item">
           <button type="button" class="btn btn-primary">Login</button>
@@ -47,16 +47,14 @@
         <label for="inputState" class="form-label">Estado</label>
         <select id="inputState" class="form-select">
 
-        <input class="form-check-input" type="checkbox" id="gridCheck">
-        <label class="form-check-label" for="gridCheck">
-          Contratante 
-        </label>
-        <input class="form-check-input" type="checkbox" id="gridCheck">
-        <label class="form-check-label" for="gridCheck">
-          Prestador
-        </label>
+        <input type="radio" id="gridCheckContratante" name="radioTipo" value="Contratante">
+        <label for="Contratante">Contratante</label><br>
+        <input type="radio" id="gridCheckPrestador" name="radioTipo" value="Prestador">
+        <label for="Prestador">Prestador</label><br>
+         
       </div>
       
+   
       <div class="col-sm-4">
         <div class="text-center">
           <div>Adicione uma foto</div>
