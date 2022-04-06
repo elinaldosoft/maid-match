@@ -11,7 +11,8 @@
         <img src="{% static 'img/img_login.jpg'%}"class="img-thumbnail"  alt="..">
       </div>
     <div class="col">
-      <form>
+      <form action="{% url 'accounts' %}" method="POST">
+          {% csrf_token %}
           <p class="text-center fs-3">Faça seu login</p>
           <!--campo para preencher email-->
           <div class="d-grid gap-2 col-6 mx-auto">
