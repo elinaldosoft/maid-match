@@ -22,6 +22,6 @@ urlpatterns = [
     path('entrar', AccountsView.as_view(), name='accounts'),
     path('cadastro', AccountsRegisterView.as_view(), name='register'),
     path('complemento', AccountsComplementRegisterView.as_view(), name='complement_register'),
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls)
 
 ]
