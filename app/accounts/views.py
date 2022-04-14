@@ -1,4 +1,3 @@
-from re import template
 from django.views import View
 from django.http.request import HttpRequest
 from django.http.response import HttpResponse
@@ -7,13 +6,17 @@ from django.shortcuts import redirect, render
 
 class MixBaseView(View):
     template_name = None
+    brandtext = None
+    logged = False
 
     def get(self, request: HttpRequest) -> HttpResponse:
-        return render(request, self.template_name)
+        return render(request, self.template_name, context={'brandtext': self.brandtext, 'logged': self.logged})
 
 
 class HomeView(MixBaseView):
     template_name = 'index.html'
+    logged = True
+    brandtext = 'Listagem de Profissionais'
 
 
 class AccountsView(MixBaseView):
@@ -32,3 +35,4 @@ class AccountsRegisterView(MixBaseView):
 
 class AccountsComplementRegisterView(MixBaseView):
     template_name = 'accounts/complement_register.html'
+    brandtext = "Por favor, complete seu cadastro"

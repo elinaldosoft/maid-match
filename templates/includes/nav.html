@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-blue mb-4">
+    <div class="container-fluid">
+        {% if logged %}
+            <form class="d-flex">
+                <input class="form-control me-4" type="search" placeholder="Search" aria-label="Search">
+                <button class="p-2 btn btn-success" type="submit">Search</button>
+            </form>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <button type="button" class="p-2 btn btn-success">Logout</button>
+                </li>
+            </ul>
+        {% else %}
+        <a class="navbar-brand" href="/">{{ brandtext|default:"Diarista para sua casa!"}}</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-flex justify-content-end">
+            {% if request.path == '/cadastro' %}
+                <a href="{% url 'accounts' %}" class="p-2 btn btn-success">Login</a>
+            {% elif request.path == '/entrar' %}
+                <a href="{% url 'register' %}" class="p-2 btn btn-success">Cadastre-se</a>
+            {% endif %}
+        </div>
+        {% endif %}
+    </div>
+</nav>

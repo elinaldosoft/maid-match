@@ -1,23 +1,12 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block container %}
-<div class="row ">
-  <nav class="navbar fixed-top navbar-light"  style="background-color: #0779ca; ">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Diarista para sua casa!</a>
-      <ul class="nav justify-content-end  ">
-        <li class="nav-item">
-          <a href="{% url 'register' %}" class="btn btn-primary">Cadastre-se</a>
-        </li>
-    </ul>
-    </div>
-  </nav>
-
-<div class="row ">
+<div class="row">
   <div class="col">
     <img src="{% static 'img/img_login.jpg'%}"class="img-thumbnail"  alt="..">
   </div>
 <div class="col">
+
 <form action="{% url 'accounts' %}" method="POST">
   {% csrf_token %}
   <p class="text-center fs-3">Faça seu login</p>
