@@ -36,3 +36,10 @@ class AccountsRegisterView(MixBaseView):
 class AccountsComplementRegisterView(MixBaseView):
     template_name = 'accounts/complement_register.html'
     brandtext = "Por favor, complete seu cadastro"
+
+
+class AccountsEmpolyerProfilesView(MixBaseView):
+    template_name = 'profiles/employer_profile.html'
+
+    def post(self, request: HttpRequest) -> HttpResponse:
+        return redirect('employer_profile.html')
