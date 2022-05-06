@@ -23,6 +23,10 @@ urlpatterns = [
     path('cadastro', AccountsRegisterView.as_view(), name='register'),
     path('complemento', AccountsComplementRegisterView.as_view(), name='complement_register'),
     path('perfil', AccountsEmpolyerProfilesView.as_view(), name='employer_profile'),
-    path('admin/', admin.site.urls)
+    path('dash/', admin.site.urls)
 
 ]
+
+admin.site.site_header = 'Maid Match'
+admin.site.site_title = 'Maid Match'
+admin.site.index_title = 'Maid Match'
