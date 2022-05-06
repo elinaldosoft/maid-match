@@ -33,6 +33,6 @@ def test_complement_register(client):
     assert response.charset == 'utf-8'
 
     html = response.content.decode()
-    assert 'Complemento Cadastro' in html
+    assert 'Complemento' in html
     assert response.headers
     assert response.headers.get('Content-Type') == 'text/html; charset=utf-8'
