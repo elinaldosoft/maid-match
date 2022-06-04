@@ -1,13 +1,15 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-blue mb-4">
+
+  <nav class="navbar navbar-expand-sm navbar-dark bg-blue mb-4">
     <div class="container-fluid">
         {% if logged %}
+            
             <form class="d-flex">
                 <input class="form-control me-4" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-light" type="submit">Search</button>
+                <button class="btn btn-outline-light" type="submit">Search</button>
             </form>
             <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <button type="button" class="btn btn-light">Logout</button>
+                <li class="nav-item-sair">
+                    <button class="btn btn-outline-light" type="submit">sair</button>
                 </li>
             </ul>
         {% else %}
