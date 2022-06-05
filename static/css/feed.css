@@ -1,11 +1,13 @@
 
-    body{
+body{
       background:#c0bdbd;
       margin-top:20px;
   }
   .card-box {
       padding: 20px;
       border-radius: 3px;
+      border: rgb(108, 175, 238) ;
+      border-color: rgb(108, 175, 238);
       margin-bottom: 30px;
       background-color: #fff;
   }

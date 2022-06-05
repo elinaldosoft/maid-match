@@ -1,8 +1,6 @@
-
-  <nav class="navbar navbar-expand-sm navbar-dark bg-blue mb-4">
+<nav class="navbar fixed-top  navbar-dark bg-blue">
     <div class="container-fluid">
         {% if logged %}
-            
             <form class="d-flex">
                 <input class="form-control me-4" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-light" type="submit">Search</button>
@@ -14,9 +12,6 @@
             </ul>
         {% else %}
         <a class="navbar-brand" href="/">{{ brandtext|default:"Diarista para sua casa!"}}</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="d-flex justify-content-end">
             {% if request.path == '/cadastro' %}
                 <a href="{% url 'accounts' %}" class="btn btn-light">Login</a>
