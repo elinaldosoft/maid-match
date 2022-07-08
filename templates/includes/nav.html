@@ -1,24 +1,32 @@
 <nav class="navbar fixed-top  navbar-dark bg-blue">
     <div class="container-fluid">
         {% if logged %}
-            <form class="d-flex">
-                <input class="form-control me-4" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-light" type="submit">Search</button>
-            </form>
-            <ul class="nav justify-content-end">
-                <li class="nav-item-sair">
-                    <button class="btn btn-outline-light" type="submit">sair</button>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="#">Buscando por sua Diarista</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Meu perfil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'accounts' %}">Sair</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         {% else %}
         <a class="navbar-brand" href="/">{{ brandtext|default:"Diarista para sua casa!"}}</a>
         <div class="d-flex justify-content-end">
             {% if request.path == '/cadastro' %}
-                <a href="{% url 'accounts' %}" class="btn btn-light">Login</a>
+                <a href="{% url 'accounts' %}"> Entrar</a>
             {% elif request.path == '/entrar' %}
-                <a href="{% url 'register' %}" class="btn btn-light">Cadastre-se</a>
+                <a href="{% url 'register' %}"> Cadastre-se</a>
             {% elif resques.path == '/complemento'%}
-                <a href="{% url 'complemento' %}" class="btn btn-light">Logout</a>
+                <a href="{% url 'complemento' %}" > Sair</a>
             {% endif %}
         </div>
         {% endif %}
