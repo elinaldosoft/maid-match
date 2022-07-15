@@ -14,7 +14,7 @@ class MixBaseView(View):
 
 
 class HomeView(MixBaseView):
-    template_name = 'index.html'
+    template_name = 'accounts/index.html'
     logged = True
     brandtext = 'Listagem de Profissionais'
 
