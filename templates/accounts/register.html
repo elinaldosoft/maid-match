@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Cadastro {% endblock %}
+{% block container %}
+<div class="row">
+  <div class="col">
+    <img src="{% static 'img/img_login.jpg' %}" class="img-fluid" height: auto;alt="...">
+  </div>
+  
+<div class="col">
+<!--Formulario do cadastro-->
+  <form action="{% url 'register' %}" method="POST">
+    {% csrf_token %}
+    <div class="row">
+      <div class="mb-3 p-3">
+          <p class="text-center fs-3">Informe seus dados</p>
+        </div>
+    </div>
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <label for="formGroupExampleInput" class="form-label">Nome Completo</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="ex: Maria Raimunda Santos Fernandes">
+      </div>
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <label for="exampleInputPassword1" class="form-label">Senha</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <label for="exampleInputEmail1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <label for="exampleInputEmail1" class="form-label">Confirme seu e-mail</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+      <div class="d-grid gap-2 col-6 mx-auto"><label for="day" class="form-label" aria-describedby="emailHelp">Data de Nascimento</label></div>
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <input type="date" class="form-control" id="day" name="day" aria-describedby="emailHelp">
+      </div>
+      <div><i class="fa-brands fa-facebook"></i></div>
+      
+      <div class="d-grid gap-2 col-6 mx-auto p-3">
+        <button type="submit" class="btn btn-primary">Cadastar</button>
+      </div>
+      
+  </form>
+</div>
+</div>
+{% endblock %}

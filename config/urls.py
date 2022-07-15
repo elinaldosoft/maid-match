@@ -15,9 +15,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app.accounts.views import AccountsView
+from app.accounts.views import AccountsView, AccountsRegisterView, AccountsComplementRegisterView, HomeView, AccountsEmpolyerProfilesView
 
 urlpatterns = [
-    path('', AccountsView.as_view(), name='accounts'),
-    path('admin/', admin.site.urls),
+    path('', HomeView.as_view(), name='home_page'),
+    path('entrar', AccountsView.as_view(), name='accounts'),
+    path('cadastro', AccountsRegisterView.as_view(), name='register'),
+    path('complemento', AccountsComplementRegisterView.as_view(), name='complement_register'),
+    path('perfil', AccountsEmpolyerProfilesView.as_view(), name='employer_profile'),
+    path('dash/', admin.site.urls)
+
 ]
+
+admin.site.site_header = 'Maid Match'
+admin.site.site_title = 'Maid Match'
+admin.site.index_title = 'Maid Match'

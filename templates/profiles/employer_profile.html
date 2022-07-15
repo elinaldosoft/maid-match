@@ -1,0 +1,155 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Perfil {% endblock %}
+{% block container %}
+ <div class="container">
+    <div class="main-body">
+          <div class="row gutters-sm">
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex flex-column align-items-center text-center">
+                    <img src="{% static 'img/alessandra.jpeg'%}" alt="Admin" class="rounded-circle" width="150">
+                    <!--<img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="Admin" class="rounded-circle" width="150">-->
+                    <div class="mt-3">
+                      <h4>Alessandra Souza </h4>
+                      <p class="text-secondary mb-1">Estudante</p>
+                      <p class="text-secondary mb-1">20 anos</p>
+                      <p class="text-muted font-size-sm">Manaus, Amazonas-BR</p>
+                      <button class="btn btn-outline-primary">Menssagem</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mt-3">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                    <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram mr-2 icon-inline text-danger"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>Instagram</h6>
+                    <span class="text-secondary">@alessandra.souza</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                    <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook mr-2 icon-inline text-primary"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>Facebook</h6>
+                    <span class="text-secondary">@souzaalessandra</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Nome Completo</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      Alessandra Souza Santos
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Email</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      alessandra.souza@gmail.com
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Telefone</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      (92) 9816-9029
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Whatsapp</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      (92) 9816-9029
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Endereço</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      Manaus, Amazonas - Br
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-12">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row gutters-sm">
+                <div class="col-sm-6 mb-3">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h6 class="d-flex align-items-center mb-3">Avaliação</h6>
+                      <medio>Limpeza </medio>
+                      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+                        <div class="estrelas">
+                          <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                          <label for="cm_star-1"><i class="fa"></i></label>
+                          <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                          <label for="cm_star-2"><i class="fa"></i></label>
+                          <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                          <label for="cm_star-3"><i class="fa"></i></label>
+                          <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                          <label for="cm_star-4"><i class="fa"></i></label>
+                          <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                          <label for="cm_star-5"><i class="fa"></i></label>
+                          <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                        </div>
+                      <medio>Organização </medio>
+                        <div class="estrelas">
+                          <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                          <label for="cm_star-1"><i class="fa"></i></label>
+                          <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                          <label for="cm_star-2"><i class="fa"></i></label>
+                          <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                          <label for="cm_star-3"><i class="fa"></i></label>
+                          <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                          <label for="cm_star-4"><i class="fa"></i></label>
+                          <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                          <label for="cm_star-5"><i class="fa"></i></label>
+                          <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                        </div>
+                      <medio>Pontual </medio>
+                      <div class="estrelas">
+                        <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                        <label for="cm_star-1"><i class="fa"></i></label>
+                        <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                        <label for="cm_star-2"><i class="fa"></i></label>
+                        <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                        <label for="cm_star-3"><i class="fa"></i></label>
+                        <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                        <label for="cm_star-4"><i class="fa"></i></label>
+                        <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                        <label for="cm_star-5"><i class="fa"></i></label>
+                        <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                      <!--<small>Mobile Template</small>
+                      <div class="progress mb-3" style="height: 5px">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <small>Backend API</small>
+                      <div class="progress mb-3" style="height: 5px">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 66%" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+{% endblock %}
